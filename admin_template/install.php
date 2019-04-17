@@ -1,6 +1,6 @@
 <?php
 function createConfigFile( $db_host, $db, $db_user, $db_pass ){
-    $myfile = fopen(getcwd()."/".date("YmdH").".cfg", "w");
+    $myfile = fopen(getcwd()."/../".date("YmdH").".cfg", "w");
     fwrite( $myfile,"DB_HOST=".$db_host.PHP_EOL."DB_DB=".$db.PHP_EOL."DB_USER=".$db_user.PHP_EOL."DB_PASS=".$db_pass);
     fclose($myfile);
 }

@@ -2,9 +2,9 @@
 include_once('../Db.php');
 
 $settings = array();
-foreach( scandir( getcwd() ) as $file  ){
+foreach( scandir( getcwd().'/..' ) as $file  ){
     if( substr($file,-4,4) == '.cfg' ){
-        foreach( explode(PHP_EOL, file_get_contents( $file ) ) as $conf ){
+        foreach( explode(PHP_EOL, file_get_contents( getcwd().'/../'.$file ) ) as $conf ){
             $conf = preg_replace('/([^a-zA-Z=_\-0-9.])/','',$conf);
             $conf_a = explode("=",$conf);
             if( count($conf_a) == 2 ){

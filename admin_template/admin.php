@@ -57,7 +57,7 @@ $login_error = false;
                 </div>
                 <input type="submit" class="btn btn-success pull-right" value="Login">
             </form>
-            <div>powered by <a href="https://github.com/adamtlangley/template-manager" target="_blank">Template Manager</a> v1.0 </div>
+            <div>powered by <a href="https://github.com/adamtlangley/template-manager" target="_blank">Template Manager</a> v1.1 </div>
 
 
         </div>
